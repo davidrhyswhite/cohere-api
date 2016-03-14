@@ -1,0 +1,10 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+valid:
+  title: Bacon tastes awesome
+  body: |
+    Bacon ipsum dolor amet spare ribs venison flank meatloaf.
+
+    Ham hock porchetta rump beef ribs, meatball landjaeger jowl tri-tip.
+    Ground round strip steak leberkas tenderloin meatloaf alcatra,
+    short loin pork porchetta prosciutto tri-tip.
