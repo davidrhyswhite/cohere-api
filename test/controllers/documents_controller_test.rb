@@ -10,6 +10,7 @@ class DocumentsControllerTest < ActionDispatch::IntegrationTest
 
     assert_response 200
     assert_response :success
+    assert_response_schema :documents, @response
   end
 
   test 'should create document' do
@@ -19,6 +20,7 @@ class DocumentsControllerTest < ActionDispatch::IntegrationTest
 
     assert_response 201
     assert_response :created
+    assert_response_schema :document, @response
   end
 
   test 'should not create document if invalid' do
@@ -34,12 +36,15 @@ class DocumentsControllerTest < ActionDispatch::IntegrationTest
     get document_url(@document)
 
     assert_response :success
+    assert_response_schema :document, @response
   end
 
   test 'should update document' do
     patch document_url(@document), params: { document: { body: @document.body, title: @document.title } }
+
     assert_response 200
     assert_response :ok
+    assert_response_schema :document, @response
   end
 
   test 'should not update document if invalid' do
