@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type" : "object",
+        "required": ["id", "type", "attributes"],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "attributes": {
+            "type": "object",
+            "required": ["title", "body", "created_at", "updated_at"]
+          }
+        }
+      }
+    }
+  }
+}
