@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data" : {
+      "type" : "object",
+      "required": ["id", "type", "attributes"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "object",
+          "required": ["name", "email", "created_at", "updated_at"]
+        }
+      }
+    }
+  }
+}
