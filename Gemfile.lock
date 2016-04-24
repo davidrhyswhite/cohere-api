@@ -49,6 +49,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     addressable (2.3.8)
+    ancestry (2.1.0)
+      activerecord (>= 3.0.0)
     arel (7.0.0)
     builder (3.2.2)
     byebug (8.2.2)
@@ -135,6 +137,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers!
+  ancestry
   byebug
   json-schema
   listen (~> 3.0.5)
