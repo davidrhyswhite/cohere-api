@@ -3,7 +3,7 @@ class DocumentsController < ApplicationController
 
   # GET /documents
   def index
-    @documents = Document.all
+    @documents = Document.roots
 
     render json: @documents
   end
